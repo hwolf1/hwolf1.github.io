@@ -3,60 +3,51 @@
   
     
     <entry>
-      <title><![CDATA[ppp]]></title>
-      <url>/2019/08/11/ppp/</url>
-      <content type="html"><![CDATA[<img src="/2019/08/11/ppp/2.jpg">]]></content>
-      
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[jjj]]></title>
-      <url>/2019/08/11/jjj/</url>
-      <content type="html"></content>
-      
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[hhh]]></title>
-      <url>/2019/08/11/hhh/</url>
-      <content type="html"></content>
-      
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[xxxx]]></title>
-      <url>/2019/08/11/xxxx/</url>
-      <content type="html"><![CDATA[<img src="/2019/08/11/xxxx/1.jpg">]]></content>
-      
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2019/08/11/hello-world/</url>
-      <content type="html"><![CDATA[<p>&lt;img src=”image/1.jpg&gt;</p>
-<figure class="image-box">
-                <img src="//yoursite.com/2019/08/11/hello-world/1.jpg" alt="1" title class>
-                <p>1</p>
-            </figure>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+      <title><![CDATA[hexo+mellow+github创建个人博客]]></title>
+      <url>/2019/08/11/hexo-mellow-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<h2 id="hexo-mellow-github创建个人博客"><a href="#hexo-mellow-github创建个人博客" class="headerlink" title="hexo+mellow+github创建个人博客"></a><strong><u>hexo+mellow+github创建个人博客</u></strong></h2><h4 id="一、安装hexo"><a href="#一、安装hexo" class="headerlink" title="一、安装hexo"></a>一、安装hexo</h4><p>​    新建hexo文件夹，安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，安装成功后，右键该文件夹Git Bash Here，打开命令窗口，下载hexo安装包，<code>npm install hexo-cli -g</code> ，初始化hexo，<code>hexo init</code>，安装deployer插件<code>npm install hexo-deployer-git --save</code>，配置hexo根目录下的_config.yml：repo: <code>git@github.com:hwolf1/hwolf1.github.io.git</code> ，设置好github仓库地址，接下来设置SSH KEY:,$ <code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>,将生成的rsa.pub文件内容复制到github上的setting-rsa。</p>
+<h4 id="二、安装mellow主题"><a href="#二、安装mellow主题" class="headerlink" title="二、安装mellow主题"></a>二、安装mellow主题</h4><p>​    安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上，在 Hexo 根目录，执行以下命令。</p>
+<p><code>git clone git@github.com:codefine/hexo-theme-mellow.git themes/mellow</code>，</p>
+<p>将hexo/_config.yml中的更改如下字段：</p>
+<p><code>theme: mellow</code></p>
+<p>安装mellow必备的依赖项：</p>
+<ul>
+<li><p>hexo-generator-search - local search搜索</p>
+</li>
+<li><p>hexo-generator-topindex - 文章置顶</p>
+</li>
+<li><p>hexo-helper-qrcode - 二维码分享</p>
+</li>
+<li><p>hexo-renderer-less - less解析器</p>
+<p><code>npm install --save hexo-generator-search@2.1.1 hexo-generator-topindex@0.3.0 hexo-helper-qrcode@1.0.2 hexo-renderer-less@0.2.0</code></p>
+</li>
+</ul>
+<p>设置好后，根据hexo/theme/mellow/下的_config.yml中文注释自行配置主题</p>
+<h4 id="三、文本编辑"><a href="#三、文本编辑" class="headerlink" title="三、文本编辑"></a>三、文本编辑</h4><p>​    文本编辑采用<a href="https://www.typora.io/#windows" target="_blank" rel="noopener">Typora</a>软件进行编辑，对于图片编辑，参考<a href="https://blog.csdn.net/xjm850552586/article/details/84101345" target="_blank" rel="noopener">博客</a>，首先把主页配置文件_config.yml 里的这个选项设置为<code>post_asset_folder:true</code>，其次hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装上传本地图片的插件，使用：<code>hexo n 文件</code>，生成文件.md并且在source/ _posts生成对应的文件夹，将图片放到对应的文件夹，在md文件中插入<code></code>。</p>
+<h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在TYpora编辑好文档后，在bash中执行：<code>hexo clean   ---&gt;    hexo d -g</code>,编译并且上传代码，将图片放到对应的文件夹，直接调用。示例博客内容如下：</p>
+<img src="/2019/08/11/hexo-mellow-github创建个人博客/博客示例.jpg"> 
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>​    第一次就到这里吧！下次见！拜了个拜！</p>
 ]]></content>
       
+        <categories>
+            
+            <category> cat1 </category>
+            
+            <category> cat2 </category>
+            
+            <category> cat3 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> tag1 </tag>
+            
+            <tag> tag2 </tag>
+            
+        </tags>
         
     </entry>
     
