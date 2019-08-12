@@ -156,18 +156,15 @@
     
         
             
-            <li><div data-rel="cat1"><i class="fold iconfont icon-right"></i>cat1<small>(1)</small></div>
+            <li><div data-rel="技术学习"><i class="fold iconfont icon-right"></i>技术学习<small>(2)</small></div>
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="cat2"><i class="fold iconfont icon-right"></i>cat2<small>(1)</small></div>
+                        <li><div data-rel="cadence">cadence<small>(1)</small></div>
                             
-                                <ul class="sub hide">
-                                    
-                                    <li><div data-rel="cat3">cat3<small>(1)</small></div>
-                                    </li>
-                                    
-                                </ul>
+                        </li>
+                            
+                        <li><div data-rel="博客搭建">博客搭建<small>(1)</small></div>
                             
                         </li>
                             
@@ -230,11 +227,19 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color5">tag1</a>
+        <a href="javascript:" class="color3">cadence</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color5">tag2</a>
+        <a href="javascript:" class="color3">安装</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">3-hexo</a>
     </li>
     
     <div class="clearfix"></div>
@@ -243,9 +248,17 @@
     
     <nav id="title-list-nav">
         
-        <a id="top" class="cat1 cat2 cat3 "
+        <a id="top" class="技术学习 cadence "
+           href="/2019/08/11/Cadence-17-2安装爬坑记/"
+           data-tag="cadence,安装"
+           data-author="" >
+            <span class="post-title" title="Cadence_17.2安装爬坑记">Cadence_17.2安装爬坑记</span>
+            <span class="post-date" title="2019-08-11 22:48:17">2019/08/11</span>
+        </a>
+        
+        <a id="top" class="技术学习 博客搭建 "
            href="/2019/08/11/hexo-mellow-github创建个人博客/"
-           data-tag="tag1,tag2"
+           data-tag="github,3-hexo"
            data-author="" >
             <span class="post-title" title="hexo+mellow+github创建个人博客">hexo+mellow+github创建个人博客</span>
             <span class="post-date" title="2019-08-11 20:50:22">2019/08/11</span>
@@ -257,14 +270,6 @@
            data-author="" >
             <span class="post-title" title="Coding">Coding</span>
             <span class="post-date" title="2019-08-12 13:18:41">2019/08/12</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/08/11/Cadence-17-2安装爬坑记/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Cadence_17.2安装爬坑记">Cadence_17.2安装爬坑记</span>
-            <span class="post-date" title="2019-08-11 22:48:17">2019/08/11</span>
         </a>
         
     </nav>
@@ -437,7 +442,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#tag1','#tag2',],
+            'data': ['#cadence','#安装','#github','#3-hexo',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

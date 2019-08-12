@@ -24,6 +24,22 @@
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 技术学习 </category>
+          
+          <category> cadence </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cadence </tag>
+            
+            <tag> 安装 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -39,20 +55,18 @@
       
       <categories>
           
-          <category> cat1 </category>
+          <category> 技术学习 </category>
           
-          <category> cat2 </category>
-          
-          <category> cat3 </category>
+          <category> 博客搭建 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> tag1 </tag>
+            <tag> github </tag>
             
-            <tag> tag2 </tag>
+            <tag> 3-hexo </tag>
             
         </tags>
       
