@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>newsite</title>
+      <link href="/hwolf1/2019/08/12/newsite/"/>
+      <url>/hwolf1/2019/08/12/newsite/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>代码</title>
       <link href="/hwolf1/2019/08/12/%E4%BB%A3%E7%A0%81/"/>
       <url>/hwolf1/2019/08/12/%E4%BB%A3%E7%A0%81/</url>
       
-        <content type="html"><![CDATA[<pre><code class="c#">    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();    n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):    tmp = int(input())    arr.append(tmp)</code></pre><p>测试</p><pre><code class="c++">   function fun(){echo &quot;这是一句非常牛逼的代码&quot;;}fun();n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):tmp = int(input())arr.append(tmp)</code></pre><pre><code class="c">   function fun(){echo &quot;这是一句非常牛逼的代码&quot;;}fun();n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):tmp = int(input())arr.append(tmp)</code></pre>]]></content>
+        <content type="html"><![CDATA[<p>2019.08/12……….</p><pre><code class="c#">    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();    n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):    tmp = int(input())    arr.append(tmp)</code></pre><p>测试</p><pre><code class="c++">   function fun(){echo &quot;这是一句非常牛逼的代码&quot;;}fun();n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):tmp = int(input())arr.append(tmp)</code></pre><pre><code class="c">   function fun(){echo &quot;这是一句非常牛逼的代码&quot;;}fun();n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):tmp = int(input())arr.append(tmp)</code></pre>]]></content>
       
       
       <categories>
