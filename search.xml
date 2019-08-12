@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Coding</title>
+      <link href="/2019/08/12/Coding/"/>
+      <url>/2019/08/12/Coding/</url>
+      
+        <content type="html"><![CDATA[<p><code>#include &lt;iostream&gt;</code><br><code>int main(int argc, char *argv[]) {/* An annoying &quot;Hello World&quot; example */</code><br><code>for (auto i = 0; i &lt; 0xFFFF; i++)</code><br><code>cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; endl;</code><br><code>char c = &#39;\n&#39;;</code><br><code>unordered_map &lt;string, vector&lt;string&gt; &gt; m;</code><br><code>m[&quot;key&quot;] = &quot;\\\\&quot;; // this is an error</code><br><code>return -2e3 + 12l;</code><br><code>}</code></p><p><code>fwrtwe4rt4</code><br><code>for (auto i = 0; i &lt; 0xFFFF; i++)</code></p><p><code>代码测试</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Cadence_17.2安装爬坑记</title>
       <link href="/2019/08/11/Cadence-17-2%E5%AE%89%E8%A3%85%E7%88%AC%E5%9D%91%E8%AE%B0/"/>
       <url>/2019/08/11/Cadence-17-2%E5%AE%89%E8%A3%85%E7%88%AC%E5%9D%91%E8%AE%B0/</url>
