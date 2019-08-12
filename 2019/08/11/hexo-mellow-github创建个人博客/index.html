@@ -196,7 +196,7 @@
     <div><a style="border-right: 1px solid #fff; width: 49%"  class="about site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="3">
-<input type="hidden" id="yelog_site_word_count" value="560">
+<input type="hidden" id="yelog_site_word_count" value="828">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -311,12 +311,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-11 22:33:27'>2019-08-11 20:50</time>
+        创建时间:<time class="date" title='更新时间: 2019-08-12 14:52:15'>2019-08-11 20:50</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:472</span>
+        <span>字数:568</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -361,29 +361,47 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="一、安装hexo"><a href="#一、安装hexo" class="headerlink" title="一、安装hexo"></a>一、安装hexo</h4><p>​    新建hexo文件夹，安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，安装成功后，右键该文件夹Git Bash Here，打开命令窗口，下载hexo安装包，<code>npm install hexo-cli -g</code> ，初始化hexo，<code>hexo init</code>，安装deployer插件<code>npm install hexo-deployer-git --save</code>，配置hexo根目录下的_config.yml：repo: <code>git@github.com:hwolf1/hwolf1.github.io.git</code> ，设置好github仓库地址，接下来设置SSH KEY:,$ <code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>,将生成的rsa.pub文件内容复制到github上的setting-rsa。</p>
+        <h4 id="一、安装hexo"><a href="#一、安装hexo" class="headerlink" title="一、安装hexo"></a>一、安装hexo</h4><p>​    新建hexo文件夹，安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，安装成功后，右键该文件夹Git Bash Here，打开命令窗口，下载hexo安装包:</p>
+<pre><code class="bash">nstall hexo-cli -g</code></pre>
+<p>初始化hexo</p>
+<pre><code class="bash">hexo init</code></pre>
+<p>安装deployer插件</p>
+<pre><code class="bash">npm install hexo-deployer-git --save</code></pre>
+<p>配置hexo根目录下的_config.yml–&gt;&gt;repo: </p>
+<pre><code class="bash"> git@github.com:hwolf1/hwolf1.github.io.git</code></pre>
+<p>设置好github仓库地址，接下来设置SSH KEY:</p>
+<pre><code class="bash">ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code></pre>
+<p>将生成的rsa.pub文件内容复制到github上的setting-rsa。</p>
 <h4 id="二、安装mellow主题"><a href="#二、安装mellow主题" class="headerlink" title="二、安装mellow主题"></a>二、安装mellow主题</h4><p>​    安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上，在 Hexo 根目录，执行以下命令。</p>
-<p><code>git clone git@github.com:codefine/hexo-theme-mellow.git themes/mellow</code>，</p>
+<pre><code class="bash">git clone git@github.com:codefine/hexo-theme-mellow.git themes/mellow</code></pre>
 <p>将hexo/_config.yml中的更改如下字段：</p>
-<p><code>theme: mellow</code></p>
+<pre><code class="bash">theme: mellow</code></pre>
 <p>安装mellow必备的依赖项：</p>
 <ul>
-<li><p>hexo-generator-search - local search搜索</p>
-</li>
-<li><p>hexo-generator-topindex - 文章置顶</p>
-</li>
-<li><p>hexo-helper-qrcode - 二维码分享</p>
-</li>
-<li><p>hexo-renderer-less - less解析器</p>
-<p><code>npm install --save hexo-generator-search@2.1.1 hexo-generator-topindex@0.3.0 hexo-helper-qrcode@1.0.2 hexo-renderer-less@0.2.0</code></p>
-</li>
+<li>hexo-generator-search - local search搜索</li>
+<li>hexo-generator-topindex - 文章置顶</li>
+<li>hexo-helper-qrcode - 二维码分享</li>
+<li>hexo-renderer-less - less解析器</li>
 </ul>
+<pre><code class="bash">npm install --save hexo-generator-search@2.1.1 hexo-generator-topindex@0.3.0 hexo-helper-qrcode@1.0.2 hexo-renderer-less@0.2.0</code></pre>
 <p>设置好后，根据hexo/theme/mellow/下的_config.yml中文注释自行配置主题</p>
-<h4 id="三、文本编辑"><a href="#三、文本编辑" class="headerlink" title="三、文本编辑"></a>三、文本编辑</h4><p>​    文本编辑采用<a href="https://www.typora.io/#windows" target="_blank" rel="noopener">Typora</a>软件进行编辑，对于图片编辑，参考<a href="https://blog.csdn.net/xjm850552586/article/details/84101345" target="_blank" rel="noopener">博客</a>，首先把主页配置文件_config.yml 里的这个选项设置为<code>post_asset_folder:true</code>，其次hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装上传本地图片的插件，使用：<code>hexo n 文件</code>，生成文件.md并且在source/ _posts生成对应的文件夹，将图片放到对应的文件夹，在md文件中插入<code></code>。</p>
-<h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在TYpora编辑好文档后，在bash中执行：<code>hexo clean   ---&gt;    hexo d -g</code>,编译并且上传代码，将图片放到对应的文件夹，直接调用。示例博客内容如下：</p>
+<p>更新：已经更换主题为<a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a>，三栏式，我更喜欢。</p>
+<h4 id="三、文本编辑"><a href="#三、文本编辑" class="headerlink" title="三、文本编辑"></a>三、文本编辑</h4><p>​    文本编辑采用<a href="https://www.typora.io/#windows" target="_blank" rel="noopener">Typora</a>软件进行编辑，对于图片编辑，参考<a href="https://blog.csdn.net/xjm850552586/article/details/84101345" target="_blank" rel="noopener">博客</a>，首先把主页配置文件_config.yml 里的这个选项设置为</p>
+<pre><code class="xml">post_asset_folder:true</code></pre>
+<p>其次hexo目录下执行这样一句话</p>
+<pre><code class="bash">npm install hexo-asset-image --save</code></pre>
+<p>这是下载安装上传本地图片的插件，使用如下：</p>
+<pre><code class="bash">hexo n 文件</code></pre>
+<p>生成文件.md并且在source/ _posts生成对应的文件夹，将图片放到对应的文件夹，在md文件中插入</p>
+<pre><code class="markdown">{% asset_img 图片名.jpg This is an example image %}</code></pre>
+<h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在TYpora编辑好文档后，在bash中执行：</p>
+<pre><code>hexo clean   ---&gt;    hexo d -g</code></pre><p>当然也可以将上诉命令保存在~/.bashrc中，下次直接调用hd、hs即可</p>
+<pre><code class="bash">alias hs=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo s&#39;  #启动本地服务
+alias hd=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&#39;  #部署博客</code></pre>
+<p>编译并且上传代码，将图片放到对应的文件夹，直接调用。示例博客内容如下：</p>
 <img src="/2019/08/11/hexo-mellow-github创建个人博客/博客示例.jpg"> 
 
-<p>​    第一次就到这里吧！下次见！拜了个拜！</p>
+<p>第一次就到这里吧！下次见！拜了个拜！</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 hwolf1@qq.com </span>
@@ -398,10 +416,10 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>hexo+mellow+github创建个人博客</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">472</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">568</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
     <p><span class="copy-title">发布时间:</span>2019-08-11, 20:50:22</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-11, 22:33:27</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-12, 14:52:15</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/11/hexo-mellow-github创建个人博客/" title="hexo+mellow+github创建个人博客">http://huangwei666.com/2019/08/11/hexo-mellow-github创建个人博客/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
