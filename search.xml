@@ -8,7 +8,7 @@
       <link href="/2019/08/12/Coding/"/>
       <url>/2019/08/12/Coding/</url>
       
-        <content type="html"><![CDATA[<p><code>#include &lt;iostream&gt;</code><br><code>int main(int argc, char *argv[]) {/* An annoying &quot;Hello World&quot; example */</code><br><code>for (auto i = 0; i &lt; 0xFFFF; i++)</code><br><code>cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; endl;</code><br><code>char c = &#39;\n&#39;;</code><br><code>unordered_map &lt;string, vector&lt;string&gt; &gt; m;</code><br><code>m[&quot;key&quot;] = &quot;\\\\&quot;; // this is an error</code><br><code>return -2e3 + 12l;</code><br><code>}</code></p><p><code>fwrtwe4rt4</code><br><code>for (auto i = 0; i &lt; 0xFFFF; i++)</code></p><p><code>代码测试</code></p>]]></content>
+        <content type="html"><![CDATA[<pre><code>    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();    n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):    tmp = int(input())    arr.append(tmp)</code></pre><p>测试</p>]]></content>
       
       
       
