@@ -176,6 +176,14 @@
     
         
             
+            <li><div data-rel="Test">Test<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
         
     
         
@@ -242,6 +250,14 @@
         <a href="javascript:" class="color2">3-hexo</a>
     </li>
     
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">代码</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">高亮</a>
+    </li>
+    
     <div class="clearfix"></div>
 </div>
 
@@ -264,9 +280,9 @@
             <span class="post-date" title="2019-08-11 20:50:22">2019/08/11</span>
         </a>
         
-        <a  class=""
+        <a  class="Test "
            href="/2019/08/12/Coding/"
-           data-tag=""
+           data-tag="代码,高亮"
            data-author="" >
             <span class="post-title" title="Coding">Coding</span>
             <span class="post-date" title="2019-08-12 13:18:41">2019/08/12</span>
@@ -314,7 +330,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-12 15:11:31'>2019-08-11 22:48</time>
+        创建时间:<time class="date" title='更新时间: 2019-08-12 15:18:02'>2019-08-11 22:48</time>
         
     </div>
     <div class="article-meta">
@@ -381,7 +397,7 @@
     <p><span class="copy-title">文章字数:</span><span class="post-count">0</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
     <p><span class="copy-title">发布时间:</span>2019-08-11, 22:48:17</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-12, 15:11:31</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-12, 15:18:02</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/11/Cadence-17-2安装爬坑记/" title="Cadence_17.2安装爬坑记">http://huangwei666.com/2019/08/11/Cadence-17-2安装爬坑记/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -464,7 +480,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#cadence','#安装','#github','#3-hexo',],
+            'data': ['#cadence','#安装','#github','#3-hexo','#代码','#高亮',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

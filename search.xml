@@ -11,6 +11,20 @@
         <content type="html"><![CDATA[<pre><code class="c#">    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();    n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):    tmp = int(input())    arr.append(tmp)</code></pre><p>测试</p><pre><code class="c++">   function fun(){echo &quot;这是一句非常牛逼的代码&quot;;}fun();n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):tmp = int(input())arr.append(tmp)</code></pre><pre><code class="c">   function fun(){echo &quot;这是一句非常牛逼的代码&quot;;}fun();n = int(input())arr = input()# python2在使用input时，实际调用的是eval(raw_input(prompt))来获取输入，接收带空格的时候需要用引号括起来# eg: &quot;1 2 3&quot;arr_ = [int(n) for n in arr.split()]n = int(input())arr = []for i in range(n):tmp = int(input())arr.append(tmp)</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> Test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 代码 </tag>
+            
+            <tag> 高亮 </tag>
+            
+        </tags>
       
     </entry>
     
