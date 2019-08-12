@@ -160,11 +160,11 @@
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="博客搭建">博客搭建<small>(1)</small></div>
+                        <li><div data-rel="cadence">cadence<small>(1)</small></div>
                             
                         </li>
                             
-                        <li><div data-rel="cadence">cadence<small>(1)</small></div>
+                        <li><div data-rel="博客搭建">博客搭建<small>(1)</small></div>
                             
                         </li>
                             
@@ -258,14 +258,6 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color2">github</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a href="javascript:" class="color2">3-hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a href="javascript:" class="color3">cadence</a>
     </li>
     
@@ -279,6 +271,14 @@
     
     <li class="article-tag-list-item">
         <a href="javascript:" class="color3">高亮</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">3-hexo</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -369,7 +369,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-12 18:02:13'>2019-08-11 20:50</time>
+        创建时间:<time class="date" title='更新时间: 2019-08-12 19:39:11'>2019-08-11 20:50</time>
         
     </div>
     <div class="article-meta">
@@ -453,7 +453,7 @@
 <pre><code class="bash">hexo n 文件</code></pre>
 <p>生成文件.md并且在source/ _posts生成对应的文件夹，将图片放到对应的文件夹，在md文件中插入</p>
 <pre><code class="markdown">{% asset_img 图片名.jpg This is an example image %}</code></pre>
-<h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在TYpora编辑好文档后，在bash中执行：</p>
+<h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在Typora编辑好文档后，在bash中执行：</p>
 <pre><code>hexo clean   ---&gt;    hexo d -g</code></pre><p>当然也可以将上诉命令保存在~/.bashrc中，下次直接调用hd、hs即可</p>
 <pre><code class="bash">alias hs=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo s&#39;  #启动本地服务
 alias hd=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&#39;  #部署博客</code></pre>
@@ -478,7 +478,7 @@ alias hd=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&#39;  #部署博客
     <p><span class="copy-title">文章字数:</span><span class="post-count">594</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
     <p><span class="copy-title">发布时间:</span>2019-08-11, 20:50:22</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-12, 18:02:13</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-12, 19:39:11</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/11/hexo-mellow-github创建个人博客/" title="hexo+mellow+github创建个人博客">http://huangwei666.com/2019/08/11/hexo-mellow-github创建个人博客/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -561,7 +561,7 @@ alias hd=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&#39;  #部署博客
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#github','#3-hexo','#cadence','#安装','#代码','#高亮','#代码测试1','#代码测试2',],
+            'data': ['#cadence','#安装','#代码','#高亮','#github','#3-hexo','#代码测试1','#代码测试2',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
