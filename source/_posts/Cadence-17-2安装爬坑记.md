@@ -51,3 +51,5 @@ PCB Editor打开选择
 3. PCB Editor导入网络表，设计PCB（好像是这样，还没看到这儿！手动滑稽.jpg  ヽﾐ ´∀｀ﾐノ＜）
 
 嗯！大概就是这样！拜了个拜！
+
+{% asset_img 逗逼.gif %} 

@@ -131,3 +131,5 @@ alias hd='hexo clean && hexo g && hexo d'  #部署博客
 {% asset_img 博客示例.jpg %} 
 
 第一次就到这里吧！下次见！拜了个拜！
+
+{% asset_img 逗逼.gif %} 
