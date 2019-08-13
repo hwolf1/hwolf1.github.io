@@ -52,4 +52,4 @@ PCB Editor打开选择
 
 嗯！大概就是这样！拜了个拜！
 
-{% asset_img 逗逼.gif %} 
+<iframe height=480 width=640 src="1.gif">

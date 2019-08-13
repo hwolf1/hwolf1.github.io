@@ -132,4 +132,4 @@ alias hd='hexo clean && hexo g && hexo d'  #部署博客
 
 第一次就到这里吧！下次见！拜了个拜！
 
-{% asset_img 逗逼.gif %} 
+<iframe height=480 width=640 src="1.gif">
