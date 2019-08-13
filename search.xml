@@ -4,9 +4,48 @@
   
     
     <entry>
-      <title>test2</title>
-      <link href="/2019/08/13/test2/"/>
-      <url>/2019/08/13/test2/</url>
+      <title>test</title>
+      <link href="/2019/08/13/test/"/>
+      <url>/2019/08/13/test/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test</title>
+      <link href="/2019/08/13/test2/test/"/>
+      <url>/2019/08/13/test2/test/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>bp</title>
+      <link href="/2019/08/13/bp/"/>
+      <url>/2019/08/13/bp/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>bp</title>
+      <link href="/2019/08/13/test2/bp/"/>
+      <url>/2019/08/13/test2/bp/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -46,11 +85,69 @@
     
     
     <entry>
+      <title>Cadence_17.2安装爬坑记</title>
+      <link href="/2019/08/11/test2/Cadence-17-2%E5%AE%89%E8%A3%85%E7%88%AC%E5%9D%91%E8%AE%B0/"/>
+      <url>/2019/08/11/test2/Cadence-17-2%E5%AE%89%E8%A3%85%E7%88%AC%E5%9D%91%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h4 id="一、下载安装包"><a href="#一、下载安装包" class="headerlink" title="一、下载安装包"></a>一、下载安装包</h4><p>这里还是推荐<a href="https://www.mr-wu.cn/cadence-orcad-allegro-resource-downloads/" target="_blank" rel="noopener">老吴的包</a>，也可以到<a href="http://www.eda365.com/thread-187152-1-1.html" target="_blank" rel="noopener">EDA365</a>下载。这里主要下载cadence SPB17.2和Hotfix_SPB17.2最新补丁。</p> <h4 id="二、安装pojie"><a href="#二、安装pojie" class="headerlink" title="二、安装pojie"></a>二、安装pojie</h4><p>安装主要采用流行的<a href="http://aligou.mr-wu.cn/" target="_blank" rel="noopener">阿里狗</a>，但是经过我的实验，不要使用阿里狗来进行安装，采用阿里狗一条龙安装好的话会出现打完补丁，所有的快捷方式无效的问题，其他问题暂时没有发现。手动安装的话就是：</p><ul><li>先安装SPB主程序和License Manager</li><li>再安装Hotfix_SPB17.2的最新补丁（自动安装到同一个文件夹）</li><li>最后打开阿里狗进行pojie</li></ul> <h4 id="三、软件说明"><a href="#三、软件说明" class="headerlink" title="三、软件说明"></a>三、软件说明</h4><p>cadence这个软件说它是个KFC全家桶不过分吧，对初学者极其不友好（相对于友商AD—&gt;号称“野鸡工具”），你看看它有多少工具</p> <p>我们需要用的主要就是Capture CSI、Padstack Editor（图片有错）、PCB Editor。打开Capture CSI，选择这个：</p> <p>看，好不容易打开软件还要选这么多，其他相关的我也不知道有啥区别，打开界面都一样，反正听Dalao的。</p><p>PCB Editor打开选择</p> <p>然后你就可以开始愉快的是用软件了。？？？这么多怎么使用？？？习惯了AD一体化的软件界面，发现cadence真的好丑有木有 ，好在有学习教程可以用，这里推荐<a href="https://www.moore8.com/courses/2102" target="_blank" rel="noopener">小哥的cadence132讲</a>，边看边学，找个板子画画，还是能很快上手的。基本开发流程是：</p><ol><li>绘制器件的原理图库，并绘制原理图，生成网络表</li><li>利用Padstack Editor设计焊盘以及封装</li><li>PCB Editor导入网络表，设计PCB（好像是这样，还没看到这儿！手动滑稽.jpg  ヽﾐ ´∀｀ﾐノ＜）</li></ol><p>嗯！大概就是这样！拜了个拜！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术学习 </category>
+          
+          <category> cadence </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cadence </tag>
+            
+            <tag> 安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo+mellow+github创建个人博客</title>
       <link href="/2019/08/11/hexo-mellow-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
       <url>/2019/08/11/hexo-mellow-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
       
         <content type="html"><![CDATA[<h4 id="一、安装hexo"><a href="#一、安装hexo" class="headerlink" title="一、安装hexo"></a>一、安装hexo</h4><p>​    留下<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方教程</a>，新建hexo文件夹，安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，安装成功后，右键该文件夹Git Bash Here，打开命令窗口，下载hexo安装包:</p><pre><code class="bash">install hexo-cli -g</code></pre><p>初始化hexo</p><pre><code class="bash">hexo init</code></pre><p>安装deployer插件</p><pre><code class="bash">npm install hexo-deployer-git --save</code></pre><p>配置hexo根目录下的_config.yml–&gt;&gt;repo: </p><pre><code class="bash"> git@github.com:hwolf1/hwolf1.github.io.git</code></pre><p>设置好github仓库地址，接下来设置SSH KEY:</p><pre><code class="bash">ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code></pre><p>将生成的rsa.pub文件内容复制到github上的setting-rsa。同时source文件夹下新建CNAME文件，记事本打开写入：</p><pre><code class="bash">huangwei666.com</code></pre><h4 id="二、安装mellow主题"><a href="#二、安装mellow主题" class="headerlink" title="二、安装mellow主题"></a>二、安装mellow主题</h4><p>​    安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上，在 Hexo 根目录，执行以下命令。</p><pre><code class="bash">git clone git@github.com:codefine/hexo-theme-mellow.git themes/mellow</code></pre><p>将hexo/_config.yml中的更改如下字段：</p><pre><code class="bash">theme: mellow</code></pre><p>安装mellow必备的依赖项：</p><ul><li>hexo-generator-search - local search搜索</li><li>hexo-generator-topindex - 文章置顶</li><li>hexo-helper-qrcode - 二维码分享</li><li>hexo-renderer-less - less解析器</li></ul><pre><code class="bash">npm install --save hexo-generator-search@2.1.1 hexo-generator-topindex@0.3.0 hexo-helper-qrcode@1.0.2 hexo-renderer-less@0.2.0</code></pre><p>设置好后，根据hexo/theme/mellow/下的_config.yml中文注释自行配置主题</p><p>更新：已经更换主题为<a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a>，三栏式，我更喜欢。</p><h4 id="三、文本编辑"><a href="#三、文本编辑" class="headerlink" title="三、文本编辑"></a>三、文本编辑</h4><p>​    文本编辑采用<a href="https://www.typora.io/#windows" target="_blank" rel="noopener">Typora</a>软件进行编辑，对于图片编辑，参考<a href="https://blog.csdn.net/xjm850552586/article/details/84101345" target="_blank" rel="noopener">博客</a>，首先把主页配置文件_config.yml 里的这个选项设置为</p><pre><code class="xml">post_asset_folder:true</code></pre><p>其次hexo目录下执行这样一句话</p><pre><code class="bash">npm install hexo-asset-image --save</code></pre><p>这是下载安装上传本地图片的插件，使用如下：</p><pre><code class="bash">hexo n 文件</code></pre><p>生成文件.md并且在source/ _posts生成对应的文件夹，将图片放到对应的文件夹，在md文件中插入</p><pre><code class="markdown">{% asset_img 图片名.jpg This is an example image %}</code></pre><h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在Typora编辑好文档后，在bash中执行：</p><pre><code>hexo clean   ---&gt;    hexo d -g</code></pre><p>当然也可以将上诉命令保存在~/.bashrc中，下次直接调用hd、hs即可</p><pre><code class="bash">alias hs=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo s&#39;  #启动本地服务alias hd=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&#39;  #部署博客</code></pre><p>编译并且上传代码，将图片放到对应的文件夹，直接调用。示例博客内容如下：</p><img src="/2019/08/11/hexo-mellow-github创建个人博客/博客示例.jpg"> <p>第一次就到这里吧！下次见！拜了个拜！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术学习 </category>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+            <tag> 3-hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo+mellow+github创建个人博客</title>
+      <link href="/2019/08/11/test2/hexo-mellow-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2019/08/11/test2/hexo-mellow-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h4 id="一、安装hexo"><a href="#一、安装hexo" class="headerlink" title="一、安装hexo"></a>一、安装hexo</h4><p>​    留下<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方教程</a>，新建hexo文件夹，安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，安装成功后，右键该文件夹Git Bash Here，打开命令窗口，下载hexo安装包:</p><pre><code class="bash">install hexo-cli -g</code></pre><p>初始化hexo</p><pre><code class="bash">hexo init</code></pre><p>安装deployer插件</p><pre><code class="bash">npm install hexo-deployer-git --save</code></pre><p>配置hexo根目录下的_config.yml–&gt;&gt;repo: </p><pre><code class="bash"> git@github.com:hwolf1/hwolf1.github.io.git</code></pre><p>设置好github仓库地址，接下来设置SSH KEY:</p><pre><code class="bash">ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code></pre><p>将生成的rsa.pub文件内容复制到github上的setting-rsa。同时source文件夹下新建CNAME文件，记事本打开写入：</p><pre><code class="bash">huangwei666.com</code></pre><h4 id="二、安装mellow主题"><a href="#二、安装mellow主题" class="headerlink" title="二、安装mellow主题"></a>二、安装mellow主题</h4><p>​    安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上，在 Hexo 根目录，执行以下命令。</p><pre><code class="bash">git clone git@github.com:codefine/hexo-theme-mellow.git themes/mellow</code></pre><p>将hexo/_config.yml中的更改如下字段：</p><pre><code class="bash">theme: mellow</code></pre><p>安装mellow必备的依赖项：</p><ul><li>hexo-generator-search - local search搜索</li><li>hexo-generator-topindex - 文章置顶</li><li>hexo-helper-qrcode - 二维码分享</li><li>hexo-renderer-less - less解析器</li></ul><pre><code class="bash">npm install --save hexo-generator-search@2.1.1 hexo-generator-topindex@0.3.0 hexo-helper-qrcode@1.0.2 hexo-renderer-less@0.2.0</code></pre><p>设置好后，根据hexo/theme/mellow/下的_config.yml中文注释自行配置主题</p><p>更新：已经更换主题为<a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a>，三栏式，我更喜欢。</p><h4 id="三、文本编辑"><a href="#三、文本编辑" class="headerlink" title="三、文本编辑"></a>三、文本编辑</h4><p>​    文本编辑采用<a href="https://www.typora.io/#windows" target="_blank" rel="noopener">Typora</a>软件进行编辑，对于图片编辑，参考<a href="https://blog.csdn.net/xjm850552586/article/details/84101345" target="_blank" rel="noopener">博客</a>，首先把主页配置文件_config.yml 里的这个选项设置为</p><pre><code class="xml">post_asset_folder:true</code></pre><p>其次hexo目录下执行这样一句话</p><pre><code class="bash">npm install hexo-asset-image --save</code></pre><p>这是下载安装上传本地图片的插件，使用如下：</p><pre><code class="bash">hexo n 文件</code></pre><p>生成文件.md并且在source/ _posts生成对应的文件夹，将图片放到对应的文件夹，在md文件中插入</p><pre><code class="markdown">{% asset_img 图片名.jpg This is an example image %}</code></pre><h4 id="四、发布博客"><a href="#四、发布博客" class="headerlink" title="四、发布博客"></a>四、发布博客</h4><p>​    在Typora编辑好文档后，在bash中执行：</p><pre><code>hexo clean   ---&gt;    hexo d -g</code></pre><p>当然也可以将上诉命令保存在~/.bashrc中，下次直接调用hd、hs即可</p><pre><code class="bash">alias hs=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo s&#39;  #启动本地服务alias hd=&#39;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&#39;  #部署博客</code></pre><p>编译并且上传代码，将图片放到对应的文件夹，直接调用。示例博客内容如下：</p> <p>第一次就到这里吧！下次见！拜了个拜！</p>]]></content>
       
       
       <categories>
