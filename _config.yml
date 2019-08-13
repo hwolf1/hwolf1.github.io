@@ -103,6 +103,6 @@ backup:
     type: git
     theme: 3-hexo
     repository:
-       github: https://github.com/hwolf1/hwolf1.github.io.git,branchName
+       github: https://github.com/hwolf1/hwolf1.github.io.git,blogbp
        #gitcafe: git@github.com:xxx/xxx.git,branchName
 
