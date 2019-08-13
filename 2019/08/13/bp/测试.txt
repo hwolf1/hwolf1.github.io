@@ -1,2 +1,0 @@
-alias hs='hexo clean && hexo g && hexo s' #启动本地服务
-alias hd='git add . && git commit -m "update" && git push origin blogbp && hexo clean && hexo g && hexo d ' #部署博客并备份
