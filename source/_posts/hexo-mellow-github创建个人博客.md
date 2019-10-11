@@ -35,13 +35,15 @@ npm install hexo-deployer-git --save
 配置hexo根目录下的_config.yml-->>repo: 
 
 ```bash
- git@github.com:hwolf1/hwolf1.github.io.git
+git@github.com:hwolf1/hwolf1.github.io.git
 ```
 
 设置好github仓库地址，接下来设置SSH KEY:
 
 ```bash
-ssh-keygen -t rsa -C "你的邮箱"
+git config --global user.email "your@example.com"
+git config --global user.name "your_user_name"
+ssh-keygen -t rsa -C "你的邮箱" #需要密码的话这里可以设置，以后每次push都需要输入密码，也可以回车忽略
 ```
 
 将生成的rsa.pub文件内容复制到github上的setting-rsa。同时source文件夹下新建CNAME文件，记事本打开写入：
