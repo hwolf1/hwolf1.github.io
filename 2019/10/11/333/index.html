@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Cadence鼠标辅助神器 | 威威的小窝</title>
-  <meta name="keywords" content=" cadence , 鼠标增强 ">
-  <meta name="description" content="Cadence鼠标辅助神器 | 威威的小窝">
+  <title>333 | 威威的小窝</title>
+  <meta name="keywords" content>
+  <meta name="description" content="333 | 威威的小窝">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人简介黄威， 目前就读于中科院国家天文台。 喜欢研究神奇小玩意和科技前沿。 最近目前在学习Cadence软件，天文技术相关知识。 联系方式 QQ : 386025716 邮箱 :hwolf1@qq.com">
 <meta name="keywords" content="creation">
@@ -328,9 +328,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Cadence鼠标辅助神器" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-333" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Cadence鼠标辅助神器</h1>
+        <h1 class="article-title">333</h1>
     
     <div class="article-meta">
         
@@ -338,32 +338,16 @@
         
         
         
-        <span class="book">
-            
-                <a href="javascript:" data-rel="技术学习">技术学习</a>/
-            
-                <a href="javascript:" data-rel="cadence">cadence</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="javascript:" class="color3">cadence</a>
-            
-            <a href="javascript:" class="color5">鼠标增强</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-19 11:20:26'>2019-08-19 11:07</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-11 15:42:15'>2019-10-11 15:42</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:523</span>
+        <span>字数:0</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -408,71 +392,7 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>对于之前用惯AD的人来说，鼠标中键功能很强，可以拖动缩放，很好用。但是换到Cadence上来后，都变了，尤其是orCAD最不好用，缩放还要按住Ctrl，或者用快捷键“I、O”。网上找了一番，目前有两种方式：</p>
-<ul>
-<li>采用修改ENV文件的方式进行</li>
-</ul>
-<pre><code class="bash"># add and modifty wheel function
-button wheel_up   &quot;roam y -$roamInc&quot;
-button wheel_down &quot;roam y  $roamInc&quot;
-button Swheel_up   &quot;roam x -$roamInc&quot;
-button Swheel_down &quot;roam x  $roamInc&quot;
-button Cwheel_up zoom in 1
-button Cwheel_down zoom out 1
-##############################################################
-实现的功能：增加PADS模式的缩小放大PCB版图和上下左右移动功能。
-滚轮       －－上下移动
-shift+滚轮 －－左右移动
-ctrl+滚轮  －－缩放</code></pre>
-<ul>
-<li>还有就是使用马上说到的神器<a href="http://www.edahelper.com/edahelper/" target="_blank" rel="noopener">EDA Helper</a>（很多EDA都支持哟）</li>
-</ul>
-<p>针对OrCAD：</p>
-<p>​    1. 向上滚动滚轮 –&gt; 放大，相当于字母”I”键</p>
-<p>​    2. 向下滚动滚轮 –&gt; 缩小相当于字母”O”键</p>
-<p>​    3. 按住<strong>鼠标右键</strong>移动，可<strong>移动工作区</strong></p>
-<p>​    4. 按<strong>中键</strong>呼出<strong>放置</strong>窗口的功能，相当于按“P”键1次</p>
-<p>​    5. 按<strong>中键向左</strong>移动<strong>撤消</strong>操作，相当于按CTRL+Z</p>
-<p>​    6. 按<strong>中键向右</strong>移动<strong>重做</strong>操作，相当于按CTRL+Y</p>
-<p>​    7. 按<strong>中键向上</strong>移动，进入<strong>画线</strong>操作，相当于按W键</p>
-<p>​    8. 按<strong>中键向下</strong>移动，<strong>删除</strong>选中内容，相当于按DELETE键</p>
-<p>针对Allegro(15.7有测试，已经有中键缩放的新版本请禁止该功能)：</p>
-<p>​    1. <strong>向上滚动</strong>滚轮 –&gt; <strong>放大</strong>，相当于”F10”键</p>
-<p>​    2. <strong>向下滚动</strong>滚轮 –&gt; <strong>缩小</strong>，相当于”F11”键</p>
-<p>​    3. <strong>中键拖动</strong>反转(适合习惯AutoCAD等中键拖动的用户)</p>
-<p>欢迎食用，真香！拜了个拜！</p>
-<pre><code class="c">
-                /*
-                * Company : 
-                * @author : 
-                * @date   :  
-                * @version: 1.0
-                * 
-                * .....................我佛慈悲........................
-                *                       _oo0oo_
-                *                      o8888888o
-                *                      88&quot; . &quot;88
-                *                      (| -_- |)
-                *                      0\  =  /0
-                *                    ___/`---&#39;\___
-                *                  .&#39; \\|     |// &#39;.
-                *                 / \\|||  :  |||// \
-                *                / _||||| -卍-|||||- \
-                *               |   | \\\  -  /// |   |
-                *               | \_|  &#39;&#39;\---/&#39;&#39;  |_/ |
-                *               \  .-\__  &#39;-&#39;  ___/-. /
-                *             ___&#39;. .&#39;  /--.--\  `. .&#39;___
-                *          .&quot;&quot; &#39;&lt;  `.___\_&lt;|&gt;_/___.&#39; &gt;&#39; &quot;&quot;.
-                *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-                *         \  \ `_.   \_ __\ /__ _/   .-` /  /
-                *     =====`-.____`.___ \_____/___.-`___.-&#39;=====
-                *                       `=---=&#39;
-                * -卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-
-                *
-                *..................佛祖开光 ,永无BUG................... 
-                */
-</code></pre>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 hwolf1@qq.com </span>
     </div>
@@ -485,12 +405,12 @@ ctrl+滚轮  －－缩放</code></pre>
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Cadence鼠标辅助神器</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">523</span></p>
+    <p><span class="copy-title">文章标题:</span>333</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">0</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-08-19, 11:07:09</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-19, 11:20:26</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/19/Cadence鼠标辅助神器/" title="Cadence鼠标辅助神器">http://huangwei666.com/2019/08/19/Cadence鼠标辅助神器/</a>
+    <p><span class="copy-title">发布时间:</span>2019-10-11, 15:42:15</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-11, 15:42:15</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/11/333/" title="333">http://huangwei666.com/2019/10/11/333/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
