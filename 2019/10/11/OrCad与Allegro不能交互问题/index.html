@@ -243,14 +243,6 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">orCAD</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">封装库路径</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a href="javascript:" class="color2">github</a>
     </li>
     
@@ -264,6 +256,14 @@
     
     <li class="article-tag-list-item">
         <a href="javascript:" class="color4">多终端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">orCAD</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">封装库路径</a>
     </li>
     
     <div class="clearfix"></div>
@@ -362,12 +362,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-11 16:11:40'>2019-10-11 15:56</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-11 16:14:24'>2019-10-11 15:56</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:400</span>
+        <span>字数:402</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -416,9 +416,9 @@
 <ol>
 <li>装系统前对比17.2和16.6，重新生成网表，设置配置文件，依旧不行，排除软件问题；</li>
 <li>装系统后一顿类似操作依旧不行，排除系统问题；</li>
-<li>讲别人画的原理图工程拷贝到自己电脑，Bingo（艹。。。）；</li>
+<li>将别人画的原理图工程拷贝到自己电脑，Bingo（艹。。。）；</li>
 <li>检查自己的原理图，发现采用block分层画图时，子层名称有”：“（之前已经删除过其中一个属性中的冒号，因为导不出网表），删除之，Bingo <strong>+ 1</strong>（艹。。。<strong>+ 1</strong>）；</li>
-<li><u><strong><em>总结</em></strong></u>：<strong>画原理图时文件名、路径、子块等等，所有牵涉到名称、路径一律不能有非法字符如”*、：“等</strong></li>
+<li><u><strong><em>总结</em></strong></u>：<strong>画原理图时文件名、路径、子块等等，所有牵涉到名称、路径一律不能有非法字符如”*、：、中文“等</strong></li>
 </ol>
 <p>总算是解决了一个多月以来的心病，还是对软件不熟悉的原因。就到这里吧，继续爬坑ing，拜了个拜！！！</p>
 <pre><code class="c">                /*
@@ -465,10 +465,10 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>OrCad与Allegro不能交互问题</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">400</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">402</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
     <p><span class="copy-title">发布时间:</span>2019-10-11, 15:56:57</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-11, 16:11:40</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-11, 16:14:24</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/11/OrCad与Allegro不能交互问题/" title="OrCad与Allegro不能交互问题">http://huangwei666.com/2019/10/11/OrCad与Allegro不能交互问题/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -551,7 +551,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#cadence','#安装','#鼠标增强','#交互布局','#orCAD','#封装库路径','#github','#3-hexo','#备份','#多终端',],
+            'data': ['#cadence','#安装','#鼠标增强','#交互布局','#github','#3-hexo','#备份','#多终端','#orCAD','#封装库路径',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
