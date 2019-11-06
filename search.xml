@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>MOS使用笔记</title>
+      <link href="/2019/11/06/MOS%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+      <url>/2019/11/06/MOS%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>最近项目需要用到MOS管，发现以前学的知识都忘的差不多了，隐约记得好像和三级管很像，遂画电路图之，结果像狗屎一样，恶补之！！！</p><h4 id="一、分类"><a href="#一、分类" class="headerlink" title="一、分类"></a>一、分类</h4><p>目前流行的主要是晶体管与场效应管，至于可控硅（IGBT）等，下次用上再说。简单粗暴N-MOS（NPN），以及P-MOS（PNP）管。</p><img src="/2019/11/06/MOS使用笔记/MOS.png"> <p>导通特性的话就是：</p><p>1.NMOS的特性，<strong>Vgs大于一定的值就会导通</strong>，适合用于<strong>源极接地</strong>时的情况（<strong>低端驱动</strong>），只要栅极电压达到4V或10V就可以了。<br>2.PMOS的特性，<strong>Vgs小于一定的值就会导通</strong>，适合用于<strong>源极接VCC</strong>时的情况（<strong>高端驱动</strong>）。但是，虽然PMOS可以很方便地用作高端驱动，但由于导通电阻大，价格贵，替换种类少等原因，在高端驱动中，通常还是使用NMOS。</p><p>上述的两类MOS管，随着现代技术的发展，导通损耗一般都在几十毫欧，甚至更小的范围。</p><p>如果将MOS管当做开关使用，像三极管那样的话，<strong>N-MOS就是高电平导通</strong>，<strong>P-MOS就是低电平导通</strong>。</p><h4 id="二、驱动方式"><a href="#二、驱动方式" class="headerlink" title="二、驱动方式"></a>二、驱动方式</h4><p>前面说到高低端驱动，<a href="https://blog.csdn.net/pan0755/article/details/84964441" target="_blank" rel="noopener">啥意思呢？？？</a>   ，客官这里请：</p><p>对于MOS管，如下图， NMOS管的主回路电流方向为D→S，导通条件为VGS有一定的压差，一般为5<del>10V（<strong>G电位比S电位高</strong>）；而PMOS管的主回路电流方向为S→D，导通条件为VGS有一定的压差，一般为-5</del>-10V（<strong>S电位比G电位高</strong>）， 下面以导通压差（VT）6V为例 。 </p><img src="/2019/11/06/MOS使用笔记/NPMOS.jpg"> <p>1.对于NMOS， 使用NMOS当下管，S极直接接地（为固定值），只需将G极电压固定值6V即可导通；若使用NMOS当上管，D极接正电源，而S极的电压不固定，无法确定控制NMOS导通的G极电压，因为S极对地的电压有两种状态，MOS管截止时为低电平，导通时接近高电平VCC。</p><img src="/2019/11/06/MOS使用笔记/NMOS.jpg"> <p>2.对于PMOS，使用PMOS当上管，S极直接接电源VCC，S极电压固定，只需G极电压比S极低6V即可导通，使用方便。</p><img src="/2019/11/06/MOS使用笔记/PMOS.jpg"> <pre><code class="c">                /*                * Company :                 * @author :                 * @date   :                  * @version: 1.0                *                 * .....................我佛慈悲........................                *                       _oo0oo_                *                      o8888888o                *                      88&quot; . &quot;88                *                      (| -_- |)                *                      0\  =  /0                *                    ___/`---&#39;\___                *                  .&#39; \\|     |// &#39;.                *                 / \\|||  :  |||// \                *                / _||||| -卍-|||||- \                *               |   | \\\  -  /// |   |                *               | \_|  &#39;&#39;\---/&#39;&#39;  |_/ |                *               \  .-\__  &#39;-&#39;  ___/-. /                *             ___&#39;. .&#39;  /--.--\  `. .&#39;___                *          .&quot;&quot; &#39;&lt;  `.___\_&lt;|&gt;_/___.&#39; &gt;&#39; &quot;&quot;.                *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |                *         \  \ `_.   \_ __\ /__ _/   .-` /  /                *     =====`-.____`.___ \_____/___.-`___.-&#39;=====                *                       `=---=&#39;                * -卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-                *                *..................佛祖开光 ,永无BUG...................                 */</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术学习 </category>
+          
+          <category> 电子技术 </category>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MOS管 </tag>
+            
+            <tag> 高低端驱动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OrCad与Allegro不能交互问题</title>
       <link href="/2019/10/11/OrCad%E4%B8%8EAllegro%E4%B8%8D%E8%83%BD%E4%BA%A4%E4%BA%92%E9%97%AE%E9%A2%98/"/>
       <url>/2019/10/11/OrCad%E4%B8%8EAllegro%E4%B8%8D%E8%83%BD%E4%BA%A4%E4%BA%92%E9%97%AE%E9%A2%98/</url>

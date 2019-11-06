@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>orCAD添加PCB封装路径 | 威威的小窝</title>
-  <meta name="keywords" content=" orCAD , 封装库路径 ">
-  <meta name="description" content="orCAD添加PCB封装路径 | 威威的小窝">
+  <title>MOS使用笔记 | 威威的小窝</title>
+  <meta name="keywords" content=" MOS管 , 高低端驱动 ">
+  <meta name="description" content="MOS使用笔记 | 威威的小窝">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="前言最近项目需要用到MOS管，发现以前学的知识都忘的差不多了，隐约记得好像和三级管很像，遂画电路图之，结果像狗屎一样，恶补之！！！ 一、分类目前流行的主要是晶体管与场效应管，至于可控硅（IGBT）等，下次用上再说。简单粗暴N-MOS（NPN），以及P-MOS（PNP）管。    导通特性的话就是： 1.NMOS的特性，Vgs大于一定的值就会导通，适合用于源极接地时的情况（低端驱动），只要栅极电压达">
 <meta name="keywords" content="MOS管,高低端驱动">
@@ -372,9 +372,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-orCAD添加PCB封装路径" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-MOS使用笔记" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">orCAD添加PCB封装路径</h1>
+        <h1 class="article-title">MOS使用笔记</h1>
     
     <div class="article-meta">
         
@@ -386,28 +386,30 @@
             
                 <a href="javascript:" data-rel="技术学习">技术学习</a>/
             
-                <a href="javascript:" data-rel="cadence">cadence</a>
+                <a href="javascript:" data-rel="电子技术">电子技术</a>/
+            
+                <a href="javascript:" data-rel="杂谈">杂谈</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color1">orCAD</a>
+            <a href="javascript:" class="color5">MOS管</a>
             
-            <a href="javascript:" class="color1">封装库路径</a>
+            <a href="javascript:" class="color1">高低端驱动</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-08-22 15:08:07'>2019-08-22 14:44</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-06 15:21:04'>2019-11-06 14:53</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:277</span>
+        <span>字数:654</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -437,7 +439,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一、分类"><span class="toc-text">一、分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、驱动方式"><span class="toc-text">二、驱动方式</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -452,20 +454,32 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天遇到个问题就是，自己设计的PCB封装，在orCAD里面找不到，它只能自身的路径，于是各种搜索，最终解决办法如下：</p>
-<ol>
-<li><p>首先打开orCAD软件，查看命令窗口的系统初始加载配置文件，网上的路径可能不适合你的安装方式：</p>
-<img src="/2019/08/22/orCAD添加PCB封装路径/路径寻找.jpg">
-</li>
-<li><p>然后右键记事本或者其他编辑软件打开CAPTURE.INI文件，在[Allegro Footprints]下，添加路径：Dir1=D:\（你的封装库路径，可以设置多个）</p>
-<p>Dir2= …<br>Dir3= … </p>
-<p>喏!~~！就是酱紫了！</p>
-<img src="/2019/08/22/orCAD添加PCB封装路径/设置完成.jpg">
-</li>
-<li><p>当然就是保存退出软件，然后。。。再打开，你设置的封装库就生效了（实测，不重启也能行QAQ）</p>
-</li>
-</ol>
-<p>好了，就到这里吧，拜了个拜！</p>
+        <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>最近项目需要用到MOS管，发现以前学的知识都忘的差不多了，隐约记得好像和三级管很像，遂画电路图之，结果像狗屎一样，恶补之！！！</p>
+<h4 id="一、分类"><a href="#一、分类" class="headerlink" title="一、分类"></a>一、分类</h4><p>目前流行的主要是晶体管与场效应管，至于可控硅（IGBT）等，下次用上再说。简单粗暴N-MOS（NPN），以及P-MOS（PNP）管。</p>
+<img src="/2019/11/06/MOS使用笔记/MOS.png"> 
+
+<p>导通特性的话就是：</p>
+<p>1.NMOS的特性，<strong>Vgs大于一定的值就会导通</strong>，适合用于<strong>源极接地</strong>时的情况（<strong>低端驱动</strong>），只要栅极电压达到4V或10V就可以了。<br>2.PMOS的特性，<strong>Vgs小于一定的值就会导通</strong>，适合用于<strong>源极接VCC</strong>时的情况（<strong>高端驱动</strong>）。但是，虽然PMOS可以很方便地用作高端驱动，但由于导通电阻大，价格贵，替换种类少等原因，在高端驱动中，通常还是使用NMOS。</p>
+<p>上述的两类MOS管，随着现代技术的发展，导通损耗一般都在几十毫欧，甚至更小的范围。</p>
+<p>如果将MOS管当做开关使用，像三极管那样的话，<strong>N-MOS就是高电平导通</strong>，<strong>P-MOS就是低电平导通</strong>。</p>
+<h4 id="二、驱动方式"><a href="#二、驱动方式" class="headerlink" title="二、驱动方式"></a>二、驱动方式</h4><p>前面说到高低端驱动，<a href="https://blog.csdn.net/pan0755/article/details/84964441" target="_blank" rel="noopener">啥意思呢？？？</a>   ，客官这里请：</p>
+<p>对于MOS管，如下图， NMOS管的主回路电流方向为D→S，导通条件为VGS有一定的压差，一般为5<del>10V（<strong>G电位比S电位高</strong>）；而PMOS管的主回路电流方向为S→D，导通条件为VGS有一定的压差，一般为-5</del>-10V（<strong>S电位比G电位高</strong>）， 下面以导通压差（VT）6V为例 。 </p>
+<img src="/2019/11/06/MOS使用笔记/NPMOS.jpg"> 
+
+
+
+<p>1.对于NMOS， 使用NMOS当下管，S极直接接地（为固定值），只需将G极电压固定值6V即可导通；若使用NMOS当上管，D极接正电源，而S极的电压不固定，无法确定控制NMOS导通的G极电压，因为S极对地的电压有两种状态，MOS管截止时为低电平，导通时接近高电平VCC。</p>
+<img src="/2019/11/06/MOS使用笔记/NMOS.jpg"> 
+
+
+
+<p>2.对于PMOS，使用PMOS当上管，S极直接接电源VCC，S极电压固定，只需G极电压比S极低6V即可导通，使用方便。</p>
+<img src="/2019/11/06/MOS使用笔记/PMOS.jpg"> 
+
+
+
+
+
 <pre><code class="c">                /*
                 * Company : 
                 * @author : 
@@ -509,12 +523,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>orCAD添加PCB封装路径</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">277</span></p>
+    <p><span class="copy-title">文章标题:</span>MOS使用笔记</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">654</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-08-22, 14:44:33</p>
-    <p><span class="copy-title">最后更新:</span>2019-08-22, 15:08:07</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/22/orCAD添加PCB封装路径/" title="orCAD添加PCB封装路径">http://huangwei666.com/2019/08/22/orCAD添加PCB封装路径/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-06, 14:53:52</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-06, 15:21:04</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/MOS使用笔记/" title="MOS使用笔记">http://huangwei666.com/2019/11/06/MOS使用笔记/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
