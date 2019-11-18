@@ -17,7 +17,7 @@ src: //i.loli.net/2017/12/12/5a2fd18a74471.jpg #主页摘要缩略图(外链以�
 ​	留下[官方教程](https://hexo.io/zh-cn/docs/)，新建hexo文件夹，安装[Node.js](https://nodejs.org/zh-cn/)和[Git](https://git-scm.com/downloads)，安装成功后，右键该文件夹Git Bash Here，打开命令窗口，下载hexo安装包:
 
 ```bash
-install hexo-cli -g
+npm install -g hexo-cli
 ```
 
 初始化hexo
