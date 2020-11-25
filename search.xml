@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>petalinux安装</title>
+      <link href="/2020/11/25/petalinux%E5%AE%89%E8%A3%85/"/>
+      <url>/2020/11/25/petalinux%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<p>​    首先，petalinux是xilinx自家推出的针对带ARM核的FPGA，可以实现内核裁剪，自带bsp等优势。</p><h1 id="一、搭建环境"><a href="#一、搭建环境" class="headerlink" title="一、搭建环境"></a>一、搭建环境</h1><p>​    1.根据自己使用的vivado版本下载petalinux版本，比如我使用的是2018.3，那就<a href="https://china.xilinx.com/support/download/index.html/content/xilinx/zh/downloadNav/embedded-design-tools/archive.html" target="_blank" rel="noopener">下载</a>，注意需要注册登录Xilinx账号，下载没有什么限制。下载你需要的开发板bsp包。还有就是需要安装ubuntu，该版本对应16.04，安装ubuntu过程省略，需要修改国内源。</p><img src="/2020/11/25/petalinux安装/下载安装包.jpg"> <p>​    2.安装好ubuntu后，我是用vmware虚拟机，可以安装vmware-tools，方便文件拖取，或者可以使用终端</p><p><code>sudo apt install open-vm-tools</code></p><p>继续安装</p><p><code>sudo apt install open-vm-tools-desktop</code></p><p>这时候就可以把下载的.run文件和bsp文件拷贝到home/user下，最好新建一个Xilinx文件夹，放进去。并且将这个文件夹加权限，</p><p><code>sudo chmod 777 xilinx</code> </p><p>权限添加后，使用ls命令可以看到Xilinx这个文件夹变绿（.doge），之后安装petalinux需要的依赖包，详见ug1144文档，这里使用aptitude包管理器，可以一次性解决包依赖性问题。</p><p><code>sudo apt-get install aptitude</code></p><p><code>sudo aptitude install tofrodos:i386 iproute2:i386 gawk:i386 gcc make:i386 net-tools:i386 libncurses5-dev:i386 zlib1g-dev:i386 libssl-dev:i386 flex:i386 bison:i386 libselinux1:i386 libncurses5 libncurses5-dev libc6:i386 libstdc++6:i386 zlib1g:i386 libssl-dev tftpd tftp openbsd-inetd cpp:i386 gcc-5:i386 binutils:i386 chrpath socat autoconf libtool git texinfo gcc-multilib build-essential libsdl1.2-dev libglib2.0-dev</code></p><p>进入到.run文件的终端目录下，运行（注意，这里是我的版本，自行修改）</p><p> <code>./petalinux-v2018.3-final-installer.run</code></p><p>整个安装过程10分钟左右，需要注意，安装完需要40G左右，所以制作虚拟机最好60G左右，因为我之前设置30G，安装失败（心碎）。接下来会有三个协议，按 enter 查看，q键退出，y同意，不同意没办法安装。 至此petalinux就可以完成安装。</p><p>由于petalinux中所用的命令使用的是bash，而不是ubuntu默认的dash，因此需要切换，做如下操作。</p><p><code>sudo cp /bin/sh /bin/sh-old</code><br> <code>sudo rm /bin/sh</code><br> <code>sudo ln -s /bin/bash /bin/sh</code><br><code>ls -al /bin/sh</code></p><p>然后运行<br><code>source /settings.sh</code><br>配置好环境变量，接下来就可以直接使用petalinux了。</p><p>默认情况下，启用webtalk选项可将工具使用情况统计信息发送回Xilinx，我们可以通过运行petalinux-util –webtalk命令来关闭webtalk功能：</p><p><code>petalinux-util --webtalk off</code></p><p>基于现有BSP文件的工程创建，在bsp文件目录下：</p><p><code>petalinux-create -t project -n &lt;PROJECT-NAME&gt; -s &lt;PATH-TO-BSP&gt;</code></p><p>   其中，</p><ul><li><project-name>为工程名称，可省略；</project-name></li><li><path-to-bsp>为BSP包所在目录路径；不指定就是当前目录下。</path-to-bsp></li></ul><p>配置完成后，我们可以对工程执行编译工作，具体指令为：</p><p><code>petalinux-build</code></p><p>不出问题的话就成功了。</p><p>但是我还没成功，所以你要是编译通过，恭喜你。</p><p>就这么多，拜了个拜！</p><pre><code class="c">                /*                * Company :                 * @author : Funway                * @date   :                  * @version: 1.0                *                 * .....................我佛慈悲........................                *                       _oo0oo_                *                      o8888888o                *                      88&quot; . &quot;88                *                      (| -_- |)                *                      0\  =  /0                *                    ___/`---&#39;\___                *                  .&#39; \\|     |// &#39;.                *                 / \\|||  :  |||// \                *                / _||||| -卍-|||||- \                *               |   | \\\  -  /// |   |                *               | \_|  &#39;&#39;\---/&#39;&#39;  |_/ |                *               \  .-\__  &#39;-&#39;  ___/-. /                *             ___&#39;. .&#39;  /--.--\  `. .&#39;___                *          .&quot;&quot; &#39;&lt;  `.___\_&lt;|&gt;_/___.&#39; &gt;&#39; &quot;&quot;.                *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |                *         \  \ `_.   \_ __\ /__ _/   .-` /  /                *     =====`-.____`.___ \_____/___.-`___.-&#39;=====                *                       `=---=&#39;                * -卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-                *                *..................佛祖开光 ,永无BUG...................                 */</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术学习 </category>
+          
+          <category> cadence </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> FPGA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MOS使用笔记</title>
       <link href="/2019/11/06/MOS%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
       <url>/2019/11/06/MOS%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>

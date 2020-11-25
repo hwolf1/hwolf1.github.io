@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>威威的小窝</title>
-  <meta name="keywords" content>
-  <meta name="description" content="威威的小窝">
+  <title>petalinux安装 | 威威的小窝</title>
+  <meta name="keywords" content=" 安装 , FPGA ">
+  <meta name="description" content="petalinux安装 | 威威的小窝">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人简介黄威， 目前就读于中科院国家天文台。 喜欢研究神奇小玩意和科技前沿。 最近目前在学习Cadence软件，天文技术相关知识。 联系方式 QQ : 386025716 邮箱 :hwolf1@qq.com">
 <meta name="keywords" content="creation">
@@ -53,7 +53,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar1.jpg" />
@@ -377,12 +377,74 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-petalinux安装" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于"><span class="toc-text">关于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">petalinux安装</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a href="javascript:">置顶</a></span>
+        
+        
+        
+        <span class="book">
+            
+                <a href="javascript:" data-rel="技术学习">技术学习</a>/
+            
+                <a href="javascript:" data-rel="cadence">cadence</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color3">安装</a>
+            
+            <a href="javascript:" class="color5">FPGA</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-11-25 10:02:12'>2020-11-25 09:33</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:818</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、搭建环境"><span class="toc-text">一、搭建环境</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -395,36 +457,97 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a><a href="https://yelog.org/">Why Blog</a></h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a><a href="https://yelog.org/">对博客的理解</a></h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h2><p><strong>威威的小窝</strong> 是黄威的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>​    首先，petalinux是xilinx自家推出的针对带ARM核的FPGA，可以实现内核裁剪，自带bsp等优势。</p>
+<h1 id="一、搭建环境"><a href="#一、搭建环境" class="headerlink" title="一、搭建环境"></a>一、搭建环境</h1><p>​    1.根据自己使用的vivado版本下载petalinux版本，比如我使用的是2018.3，那就<a href="https://china.xilinx.com/support/download/index.html/content/xilinx/zh/downloadNav/embedded-design-tools/archive.html" target="_blank" rel="noopener">下载</a>，注意需要注册登录Xilinx账号，下载没有什么限制。下载你需要的开发板bsp包。还有就是需要安装ubuntu，该版本对应16.04，安装ubuntu过程省略，需要修改国内源。</p>
+<img src="/2020/11/25/petalinux安装/下载安装包.jpg"> 
 
-        </article>
-        
-        <p>
-            <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+<p>​    2.安装好ubuntu后，我是用vmware虚拟机，可以安装vmware-tools，方便文件拖取，或者可以使用终端</p>
+<p><code>sudo apt install open-vm-tools</code></p>
+<p>继续安装</p>
+<p><code>sudo apt install open-vm-tools-desktop</code></p>
+<p>这时候就可以把下载的.run文件和bsp文件拷贝到home/user下，最好新建一个Xilinx文件夹，放进去。并且将这个文件夹加权限，</p>
+<p><code>sudo chmod 777 xilinx</code> </p>
+<p>权限添加后，使用ls命令可以看到Xilinx这个文件夹变绿（.doge），之后安装petalinux需要的依赖包，详见ug1144文档，这里使用aptitude包管理器，可以一次性解决包依赖性问题。</p>
+<p><code>sudo apt-get install aptitude</code></p>
+<p><code>sudo aptitude install tofrodos:i386 iproute2:i386 gawk:i386 gcc make:i386 net-tools:i386 libncurses5-dev:i386 zlib1g-dev:i386 libssl-dev:i386 flex:i386 bison:i386 libselinux1:i386 libncurses5 libncurses5-dev libc6:i386 libstdc++6:i386 zlib1g:i386 libssl-dev tftpd tftp openbsd-inetd cpp:i386 gcc-5:i386 binutils:i386 chrpath socat autoconf libtool git texinfo gcc-multilib build-essential libsdl1.2-dev libglib2.0-dev</code></p>
+<p>进入到.run文件的终端目录下，运行（注意，这里是我的版本，自行修改）</p>
+<p> <code>./petalinux-v2018.3-final-installer.run</code></p>
+<p>整个安装过程10分钟左右，需要注意，安装完需要40G左右，所以制作虚拟机最好60G左右，因为我之前设置30G，安装失败（心碎）。接下来会有三个协议，按 enter 查看，q键退出，y同意，不同意没办法安装。 至此petalinux就可以完成安装。</p>
+<p>由于petalinux中所用的命令使用的是bash，而不是ubuntu默认的dash，因此需要切换，做如下操作。</p>
+<p><code>sudo cp /bin/sh /bin/sh-old</code><br> <code>sudo rm /bin/sh</code><br> <code>sudo ln -s /bin/bash /bin/sh</code><br><code>ls -al /bin/sh</code></p>
+<p>然后运行<br><code>source /settings.sh</code><br>配置好环境变量，接下来就可以直接使用petalinux了。</p>
+<p>默认情况下，启用webtalk选项可将工具使用情况统计信息发送回Xilinx，我们可以通过运行petalinux-util –webtalk命令来关闭webtalk功能：</p>
+<p><code>petalinux-util --webtalk off</code></p>
+<p>基于现有BSP文件的工程创建，在bsp文件目录下：</p>
+<p><code>petalinux-create -t project -n &lt;PROJECT-NAME&gt; -s &lt;PATH-TO-BSP&gt;</code></p>
+<p>   其中，</p>
+<ul>
+<li><project-name>为工程名称，可省略；</project-name></li>
+<li><path-to-bsp>为BSP包所在目录路径；不指定就是当前目录下。</path-to-bsp></li>
+</ul>
+<p>配置完成后，我们可以对工程执行编译工作，具体指令为：</p>
+<p><code>petalinux-build</code></p>
+<p>不出问题的话就成功了。</p>
+<p>但是我还没成功，所以你要是编译通过，恭喜你。</p>
+<p>就这么多，拜了个拜！</p>
+<pre><code class="c">                /*
+                * Company : 
+                * @author : Funway
+                * @date   :  
+                * @version: 1.0
+                * 
+                * .....................我佛慈悲........................
+                *                       _oo0oo_
+                *                      o8888888o
+                *                      88&quot; . &quot;88
+                *                      (| -_- |)
+                *                      0\  =  /0
+                *                    ___/`---&#39;\___
+                *                  .&#39; \\|     |// &#39;.
+                *                 / \\|||  :  |||// \
+                *                / _||||| -卍-|||||- \
+                *               |   | \\\  -  /// |   |
+                *               | \_|  &#39;&#39;\---/&#39;&#39;  |_/ |
+                *               \  .-\__  &#39;-&#39;  ___/-. /
+                *             ___&#39;. .&#39;  /--.--\  `. .&#39;___
+                *          .&quot;&quot; &#39;&lt;  `.___\_&lt;|&gt;_/___.&#39; &gt;&#39; &quot;&quot;.
+                *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+                *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+                *     =====`-.____`.___ \_____/___.-`___.-&#39;=====
+                *                       `=---=&#39;
+                * -卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-卍-
+                *
+                *..................佛祖开光 ,永无BUG................... 
+                */
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 hwolf1@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>petalinux安装</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">818</span></p>
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="hwolf">hwolf</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-11-25, 09:33:38</p>
+    <p><span class="copy-title">最后更新:</span>2020-11-25, 10:02:12</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/11/25/petalinux安装/" title="petalinux安装">http://huangwei666.com/2020/11/25/petalinux安装/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
     <div id="comments"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
@@ -444,6 +567,13 @@
         gitalk.render('comments')
     })
 </script>
+
+
+
+
+    
+
+
 
 
     </div>
